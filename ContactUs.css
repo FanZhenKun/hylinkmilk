@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;300;400;500;700;900&display=swap');
+body *{
+    box-sizing: border-box;
+    font-family: 'Manrope','Noto Sans TC', sans-serif;
+    --small_title_color:#e1b44f;
+}
+h2{
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    padding: 20px 0;
+}
+/* h1, h2, h3, h4, h5,a{
+    color: #1A1A1A;
+    
+    /* margin: 0 0 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    transition: 0.3s;
+    letter-spacing: -.5px; 
+    } */
+h3 {
+        font-size: 3rem;
+        line-height: 1.3;
+        font-weight: 600;
+        
+    }
+a{
+    text-decoration: none;
+    color: #74787c;
+    transition: opacity 0.3s;
+}
+.contact{
+    background: transparent url("pic/slider-1.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    /* color: #FFF; */
+    box-sizing: border-box;
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.contact .container .wrap h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 7;
+}
+.contact .container .wrap{
+    position: relative;
+    
+}
+.contact .container .wrap span{
+    display: inline-block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 1.5rem;
+}
+/* mes */
+
+.message .container .contact_title .small{
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--small_title_color);
+    font-size: 1.5rem;
+    
+}
+.message .container .contact_title .small::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: var(--small_title_color);
+}
+
+.message .container .contact_icons{
+    display: flex;
+    margin-bottom: 20px;
+}
+.message .container .contact_icons .small_icon {
+    background-color:var(--small_title_color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    
+    text-align:center ;
+    line-height: 2;
+    font-size: 1.8rem;
+}
+.message .container .contact_icons .small_icon >img{
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.message .container .contact_icons a {
+    display: flex;
+}
+
+
+.message .container .contact_icons .small_mark{
+    display: block;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.message .container .contact_icons .small_mark > p{
+    color: #1a1a1a;
+    font-weight: 600;
+}
+.message .container .txtbox .txtbox_items{
+    position: relative;
+}
+
+.message .container .txtbox .txtbox_items .contact_box{
+    background-color: #e4f3f0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem   ;
+    border: none;
+}
+
+.message .container .txtbox .txtbox_items img {
+    position: absolute;    
+    right: 20px;
+    z-index: 1;
+    margin-top: 10px;
+}
+.message .container .txtbox .btn_submit button{
+
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #e1b44f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif
+}
+.txtbox .txtbox_items img{
+    width: 24px;
+    height: 24px;
+}
+@keyframes ooxx{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100px;
+    }
+}
+@media screen and (min-width:768px){
+    .contact{
+        margin-bottom: 40px;
+    }
+    .message .container .txtbox{
+        margin-top: 40px;
+        padding-top: 50px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+    /* btn sumbit */
+    .message .container .txtbox .btn_submit button{
+        margin: 0 auto;
+    }
+    .message .container .txtbox .btn_submit button:hover{
+        background-color:#e18e4f;
+        position: relative;
+        -webkit-animation-name: ooxx;
+        animation-name: ooxx;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+        animation-play-state: running;
+    }
+}
