@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>商店</title>
     
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
@@ -67,12 +67,13 @@
                                 <div>
                                     <div>
                                         <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Login</a></li>
-                                            <li class="cart">
+                                            <li><a href="#">首頁</a></li>
+                                            <li><a href="#">關於我們</a></li>
+                                            <li><a href="#">商店</a></li>
+                                            <li><a href="#">部落格</a></li>
+                                            <li><a href="#">聯絡我們</a></li>
+                                            <li><a href="#">帳戶登入</a></li>
+                                            <li class="cart header_cart_icon">
                                                 <a href="#" style="color:#fff;">
                                                     <i class="fas fa-shopping-cart"></i></a>
                                                     <span>0</span>
@@ -90,18 +91,21 @@
             
         </nav>
     </header>
-    <div class="md_cart"><a href="#" style="color:#fff;"><i class="fas fa-shopping-cart"></i></a><span>0</span></div>
+    <div class="md_cart header_cart_icon">
+        <a href="#" style="color:#fff;"><i class="fas fa-shopping-cart"></i>       </a>
+        <span>0</span>
+    </div>
     
     <section class="contact">
         <div class="container">
             <div class="row wraps">
                 <div class="col-12">
-                    <h3>最新文章</h3>
+                    <h3>商店</h3>
                     <span>
                         <a href="#"> 
                             <i class="fas fa-home" style="color: #74787c;"></i>首頁</a>
                         <a href="#">
-                            <i class="fas fa-chevron-right"></i>最新文章</a>
+                            <i class="fas fa-chevron-right"></i>商店</a>
                     </span>
                 </div>
             </div>
@@ -131,6 +135,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 右方資訊 還沒用JS -->
                 <div class="col-12 col-md-6">
                     <div class="allproduct_info">
                         <div class="tittle_product">
@@ -142,6 +147,7 @@
                                 <span><del>$90</del></span>
                                 <span class="n_amt">$70.00</span>
                             </span>
+                            <!-- star*** -->
                             <div class="star_rating rating">
                                 <ul>
                                     <li class="star yes"><i class="fa fa-star"></i></li>
@@ -153,71 +159,355 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="p_content">
-                            <p class="d_content">
+                        <div class="txt_content">
+                            <p class="txt_p_con">
                                 Lorem ipsum dolor sit amet consec tetur adipi sicing elit sed do eius mo temporincididunt ut labore et dolore magna to aliqua. Ut enim ad.
                             </p>
                         </div>
-                        <div class="cart_quantity">
-                            <div class="cart_plus_minus">
-                                <span class="dec qtybutton">-</span>
-                                <input class="cart_plus_minus_box" type="text" name="qtybutton" value="1">
-                                <span class="inc qtybutton">+</span>
-                            </div>
-                        </div>
+                        <!-- qty -->
+                        
                         <div class="allchoices">
-                            <div class="choice_icon">
+                            <div class="cart_quantity">
+                                <div class="cart_plus_minus">
+                                    <input class="dec qtybutton" type="button" value="-">
+                                    <input class="cart_plus_minus_box" type="text" name="qtybutton" value="1">
+                                    <input class="inc qtybutton" type="button" value="+">
+                                </div>
+                            </div>
+                            
+                            <div class="add_buycar">
+                                <a class="buy_cart" href="#">加入購物車</a>
+                            </div>
+                            <div class="add_heart">
+                                <a href=""><span class="heart"><i class="fa fa-heart"></i></span></a>
+                            </div>
+                            
+                        </div>
+                        <!-- info -->
+                        <div class="categories">
+                            <div class="categories_area">
+                                <p class="category"><span>Number</span></p>
+                                <span> AFH4325</span>
+                            </div>
+                            <div class="categories_area">
+                                <p class="category"><span>Categories</span></p>
                                 <ul>
-                                    <li>
-                                        <a class="text-uppercase adtocart" href="cart.html">add to cart</a>
-                                    </li>
-                                    <li>
-                                        <a href=""><span class="heart"><i class="fa fa-heart"></i></span></a>
-                                    </li>
+                                    <li><a href="" class="">Milk,</a></li>
+                                    <li><a href="" class="">Cheese,</a></li>
+                                    <li><a href="" class="">Organic ,</a></li>
+                                    <li><a href="" class="">Butter,</a></li>
+                                    <li><a href="" class="">Farm</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="categories_area">
+                                <p class="category"><span>Tags </span> </p>
+                                <ul>
+                                    <li><a href="" class="">Gras, </a></li>
+                                    <li><a href="" class="">Bags, </a></li>
+                                    <li><a href="" class="">Cheese, </a></li>
+                                    <li><a href="" class="">Milk</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="categories_area share_area">
+                                <p class="category"><span>Share </span> </p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="categories_area">
-                            <p class="category"><span>Number</span></p>
-                            <span> AFH4325</span>
-                        </div>
-                        <div class="categories_area">
-                            <p class="category"><span>Categories</span></p>
-                            <ul>
-                                <li><a href="" class="">Milk,</a></li>
-                                <li><a href="" class="">Cheese,</a></li>
-                                <li><a href="" class="">Organic ,</a></li>
-                                <li><a href="" class="">Butter,</a></li>
-                                <li><a href="" class="">Farm</a></li>
-                            </ul>
-                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <div class="categories_area">
-                            <p class="category"><span>Tags </span> </p>
-                            <ul>
-                                <li><a href="" class="">Gras, </a></li>
-                                <li><a href="" class="">Bags, </a></li>
-                                <li><a href="" class="">Butter, </a></li>
-                                <li><a href="" class="">Cheese, </a></li>
-                                <li><a href="" class="">Milk</a></li>
-                            </ul>
+        <!-- re 
+        <div class="reviews_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="ch_title">
+                            <button class="btn_mesg" id="product_description">產品描述</button>
+                            <button class="btn_mesg" id="additional_Info">其他信息</button>
+                            <button class="btn_mesg" id="cus_reviews">評論(1)</button>
+                            
                         </div>
-
-                        <div class="categories-area share-area">
-                            <p class="category"><span>Share </span> </p>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            </ul>
+                        <div class="shop_cont">
+                            <p>aaa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    
+    <section class="pooducts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="txt_top ">
+                        <span class="small_title">產品</span>
+                        <h2>相關產品</h2>
+                    </div>
+                    <div class="pooducts_wrap">
+                        <div class="slider_pooducts owl-carousel owl-theme">
+                            <div class="item">                                
+                                <div class="product-wrap">
+                                    <!-- product-item -->
+                                    <div class="product-img">
+                                        <img  src="./pic/product1.jpg" alt="">
+                                        <span class="prod_badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="prod_love">
+                                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="prod_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <a href="#">
+                                            <h4>Pecorino Romano </h4>
+                                        </a>
+                                        <p class="prod_price">
+                                            <span class="new">$23.50</span>
+                                            <span class="old">$55.50</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">                                
+                                <div class="product-wrap">
+                                    <!-- product-item -->
+                                    <div class="product-img">
+                                        <img  src="./pic/product2.jpg" alt="">
+                                        <span class="prod_badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="prod_love">
+                                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="prod_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <a href="#">
+                                            <h4>Evaporated Milk</h4>
+                                        </a>
+                                        <p class="prod_price">
+                                            <span class="new">$28.50</span>
+                                            <span class="old">$66.50</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">                                
+                                <div class="product-wrap">
+                                    <!-- product-item -->
+                                    <div class="product-img">
+                                        <img  src="./pic/product3.jpg" alt="">
+                                        <span class="prod_badges">
+                                            <span class="sale">-20%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="prod_love">
+                                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="prod_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <a href="single-product.html">
+                                            <h4>Ricotta Salatas</h4>
+                                        </a>
+                                        <p class="prod_price">
+                                            <span class="new">$27.50</span>
+                                            <span class="old">$50.50</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">                                
+                                <div class="product-wrap">
+                                    <!-- product-item -->
+                                    <div class="product-img">
+                                        <img  src="./pic/product4.jpg" alt="">
+                                        <span class="prod_badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="prod_love">
+                                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="prod_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <a href="#">
+                                            <h4>Romano Milk</h4>
+                                        </a>
+                                        <p class="prod_price">
+                                            <span class="new">$20.25</span>
+                                            <span class="old">$30.50</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">                                
+                                <div class="product-wrap">
+                                    <!-- product-item -->
+                                    <div class="product-img">
+                                        <img  src="./pic/product2.jpg" alt="">
+                                        <span class="prod_badges">
+                                            <span class="sale">-10%</span>
+                                            <span class="new">New</span>
+                                        </span>
+                                        <div class="prod_love">
+                                            <a class="cart-icon" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="prod_rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <a href="#">
+                                            <h4>Apple Milk</h4>
+                                        </a>
+                                        <p class="prod_price">
+                                            <span class="new">$23.50</span>
+                                            <span class="old">$55.50</span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- 側邊購物車 -->
+    <section class="cart_sidebar_info transition-3 info-opened">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info_inner transition-3">
+                        <div class="menu_sidebar_logo">
+                            <img src="./pic/footer-logo.png" alt="">
+                            <a href="#" class="cart_sidebar_close-btn"><i class="fa fa-times"></i></a>
+                        </div>
+                        <!-- logo  -->
+                            
+                        <!-- Cart item -->
+                        <div class="cart-modal-body">
+                            <h2>我的商品</h2>
+                            <div class="cart-modal-product-wrap">
+                                <div class="cart-modal-product">
+                                    <div class="cart-modal-img">
+                                        <a href="shop.html">
+                                            <img src="./pic/product2.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="cart-modal-content">
+                                        <h4><a href="#">Organic Grassfed Butter </a></h4>
+                                        <div class="cart-modal-action">
+                                            <div class="cart-modal-action-item">
+                                                <div class="cart-modal-quantity">
+                                                    <p>1</p>
+                                                    <p>x</p>
+                                                    <p class="cart-quantity-price">$ 8.30</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-modal-delete">
+                                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-modal-product">
+                                    <div class="cart-modal-img">
+                                        <a href="shop.html">
+                                            <img src="./pic/product10.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="cart-modal-content">
+                                        <h4><a href="#">Organic Grassfed Butter </a></h4>
+                                        <div class="cart-modal-action">
+                                            <div class="cart-modal-action-item">
+                                                <div class="cart-modal-quantity">
+                                                    <p>1</p>
+                                                    <p>x</p>
+                                                    <p class="cart-quantity-price">$ 12.50</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-modal-delete">
+                                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-modal-total">
+                                <p>總金額</p>
+                                <h3>$20.80</h3>
+                            </div>
+                            <div class="cart-modal-button">
+                                <a href="#" class="slider_btn_one more-link ">結帳去</a>
+                                <a href="#" class="slider_btn_one more-link ">觀看購物車</a>
+                            </div>
+                        </div>
+                        <!-- end: Cart item -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- info_inner-->
+    </section>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -254,9 +544,11 @@
                         <div class=" footer_nav">
                             <span class="F_icon_title">快速連結</span>
                             <ul>
-                                <li><a href="#">djfkjdfkk</a></li>
-                                <li><a href="#">djfkjdfkk</a></li>
-                                <li><a href="#">djfkjdfkk</a></li>
+                                <li class="F_link"><a href="#">關於我們</a></li>
+                                <li class="F_link"><a href="#">商品</a></li>
+                                <li class="F_link"><a href="#">部落格</a></li>
+                                <li class="F_link"><a href="#">聯絡我們</a></li>
+                                <li class="F_link"><a href="#">帳戶登入</a></li>
                             </ul>
                         </div>
                     </div>
@@ -281,6 +573,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <script src="owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="jquery.scrollUp.min.js"></script>
     <script>
         AOS.init();
     </script>
@@ -298,7 +591,7 @@
                 items:3
             },
             1000:{
-                items:5
+                items:4
             }
         }
     })
@@ -317,6 +610,89 @@
         }
         
         window.addEventListener("load", init, false);
-        </script>
+    </script>
+    <!-- show -->
+    <script>
+        $('.slider_pooducts').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    </script>
+    </script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true // Set true to use image
+            });
+        });
+    </script>
+
+    <script>
+    $(function () {
+        $.scrollUp({
+        scrollName: 'scrollUp', // Element ID
+        scrollDistance: 300, // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top', // 'top' or 'bottom'
+        scrollSpeed: 300, // Speed back to top (ms)
+        easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+        animation: 'fade', // Fade, slide, none
+        animationInSpeed: 200, // Animation in speed (ms)
+        animationOutSpeed: 200, // Animation out speed (ms)
+        scrollText: 'Scroll to top', // Text for element, can contain HTML
+        scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
+        scrollImg: false, // Set true to use image
+        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647 // Z-Index for the overlay
+        });
+    });
+    </script>
+    <script>
+        // 購物車 加減寫法
+    let btnMinus =document.getElementsByClassName("dec").value;
+    let btnPlus =document.getElementsByClassName("inc").value;
+    let qtyBox =document.getElementsByClassName("cart_plus_minus_box").value;
+    let button = document.getElementsByClassName("dec");
+    function changeQty(i,qty){
+        let newQty =parseInt(qtyBox[i].value)+qty;
+        if(newQty<0){
+            
+            // document.getElementsByClassName("dec").disabled=true;
+            newQty =0;
+        }else{
+            button.disabled=false;
+        }
+        qtyBox[i].value =newQty;
+
+    }
+    window.addEventListener("load", function(){
+        btnMinus= document.getElementsByClassName('dec');
+        btnPlus= document.getElementsByClassName('inc');
+        qtyBox=  document.getElementsByClassName('cart_plus_minus_box');
+        
+        for (let i = 0; i < btnMinus.length; i++) {
+            btnMinus[i].onclick =function(){
+                changeQty(i,-1);
+            };
+            btnPlus[i].onclick =function(){
+                changeQty(i,+1);
+            };
+        }
+    })
+        
+    </script>
+
+    <script src="milk.js"></script>
 </body>
 </html>

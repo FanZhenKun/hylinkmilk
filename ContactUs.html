@@ -66,12 +66,13 @@
                                 <div>
                                     <div>
                                         <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Login</a></li>
-                                            <li class="cart">
+                                            <li><a href="#">首頁</a></li>
+                                            <li><a href="#">關於我們</a></li>
+                                            <li><a href="#">商店</a></li>
+                                            <li><a href="#">部落格</a></li>
+                                            <li><a href="#">聯絡我們</a></li>
+                                            <li><a href="#">帳戶登入</a></li>
+                                            <li class="cart header_cart_icon">
                                                 <a href="#" style="color:#fff;">
                                                     <i class="fas fa-shopping-cart"></i></a>
                                                     <span>0</span>
@@ -89,7 +90,8 @@
             
         </nav>
     </header>
-    <div class="md_cart"><a href="#" style="color:#fff;"><i class="fas fa-shopping-cart"></i></a><span>0</span></div>
+    <!-- 手機購物車 -->
+    <div class="md_cart header_cart_icon"><a href="#" style="color:#fff;"><i class="fas fa-shopping-cart"></i></a><span>0</span></div>
 
     <section class="contact">
         <div class="container">
@@ -180,7 +182,85 @@
             </div>
                 
     </section>
+    <!-- 側邊購物車 -->
+    <section class="cart_sidebar_info transition-3 info-opened">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info_inner transition-3">
+                        <div class="menu_sidebar_logo">
+                            <img src="./pic/footer-logo.png" alt="">
+                            <a href="#" class="cart_sidebar_close-btn"><i class="fa fa-times"></i></a>
+                        </div>
+                        <!-- logo  -->
+                            
+                        <!-- Cart item -->
+                        <div class="cart-modal-body">
+                            <h2>我的商品</h2>
+                            <div class="cart-modal-product-wrap">
+                                <div class="cart-modal-product">
+                                    <div class="cart-modal-img">
+                                        <a href="shop.html">
+                                            <img src="./pic/product2.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="cart-modal-content">
+                                        <h4><a href="#">Organic Grassfed Butter </a></h4>
+                                        <div class="cart-modal-action">
+                                            <div class="cart-modal-action-item">
+                                                <div class="cart-modal-quantity">
+                                                    <p>1</p>
+                                                    <p>x</p>
+                                                    <p class="cart-quantity-price">$ 8.30</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-modal-delete">
+                                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-modal-product">
+                                    <div class="cart-modal-img">
+                                        <a href="shop.html">
+                                            <img src="./pic/product10.jpg" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="cart-modal-content">
+                                        <h4><a href="#">Organic Grassfed Butter </a></h4>
+                                        <div class="cart-modal-action">
+                                            <div class="cart-modal-action-item">
+                                                <div class="cart-modal-quantity">
+                                                    <p>1</p>
+                                                    <p>x</p>
+                                                    <p class="cart-quantity-price">$ 12.50</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart-modal-delete">
+                                                <a href="#"><i class="icofont-ui-delete"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-modal-total">
+                                <p>總金額</p>
+                                <h3>$20.80</h3>
+                            </div>
+                            <div class="cart-modal-button">
+                                <a href="#" class="slider_btn_one more-link ">結帳去</a>
+                                <a href="#" class="slider_btn_one more-link ">觀看購物車</a>
+                            </div>
+                        </div>
+                        <!-- end: Cart item -->
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- info_inner-->
+    </section>
 
     <footer>
         <div class="container">
@@ -218,9 +298,11 @@
                         <div class=" footer_nav">
                             <span class="F_icon_title">快速連結</span>
                             <ul>
-                                <li><a href="#">djfkjdfkk</a></li>
-                                <li><a href="#">djfkjdfkk</a></li>
-                                <li><a href="#">djfkjdfkk</a></li>
+                                <li class="F_link"><a href="#">關於我們</a></li>
+                                <li class="F_link"><a href="#">商店</a></li>
+                                <li class="F_link"><a href="#">部落格</a></li>
+                                <li class="F_link"><a href="#">聯絡我們</a></li>
+                                <li class="F_link"><a href="#">帳戶登入</a></li>
                             </ul>
                         </div>
                     </div>
@@ -244,9 +326,39 @@
     <script src="owl.carousel.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script type="text/javascript" src="jquery.scrollUp.min.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true // Set true to use image
+            });
+        });
+    </script>
+
+    <script>
+    $(function () {
+        $.scrollUp({
+        scrollName: 'scrollUp', // Element ID
+        scrollDistance: 300, // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top', // 'top' or 'bottom'
+        scrollSpeed: 300, // Speed back to top (ms)
+        easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+        animation: 'fade', // Fade, slide, none
+        animationInSpeed: 200, // Animation in speed (ms)
+        animationOutSpeed: 200, // Animation out speed (ms)
+        scrollText: 'Scroll to top', // Text for element, can contain HTML
+        scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
+        scrollImg: false, // Set true to use image
+        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647 // Z-Index for the overlay
+        });
+    });
+    </script>
+
+    <script src="milk.js"></script>
 </body>
 </html>
