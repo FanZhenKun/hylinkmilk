@@ -9,7 +9,6 @@ h2{
     font-size: 3rem;
     color: #1a1a1a;
     font-weight: 700;
-    padding: 20px 0;
 }
 h3 {
     font-size: 2.5rem;
@@ -36,7 +35,7 @@ a{
     text-align: center;
     color: #fff;
 }
-.contact .container .wraps h3 {
+.contact .container .wraps h2 {
     color: #fff;
     text-transform: capitalize;
     font-size: 55px;

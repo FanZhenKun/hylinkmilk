@@ -16,4 +16,12 @@
         $(".body-overlay").removeClass("opened");
     });
 
-        
+    //立即 Btn
+    $(".new_post").slideToggle();
+    $(document).ready(function(){
+        $(".btn_now .more-link").click(function(){
+            $(".new_post").slideToggle();
+        });
+
+    })
+ 
