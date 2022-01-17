@@ -24,4 +24,20 @@
         });
 
     })
- 
+    
+
+    //tab 切換
+    
+    window.addEventListener('load',()=>{
+        var navTabArray = ['showleft','show','showright']
+        navTabA = document.querySelectorAll('#nav_tab>a')
+        navTab = document.querySelector('#nav_tab')
+        navTabA.forEach( (e,index) => {
+            e.addEventListener('click',()=>{
+                navTabArray.forEach(e=>{
+                    navTab.classList.remove(e)
+                })
+                navTab.classList.add(navTabArray[index])
+            });
+        });
+    });

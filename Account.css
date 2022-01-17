@@ -144,6 +144,10 @@ a{
     text-transform: capitalize;
     text-align: center;
 }
+/* 立即 btn go */
+.btn_now {
+    margin-bottom: 20px;
+}
 @media screen and (max-width:767px){
     .about{
         padding: 30px 0;
